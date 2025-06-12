@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Julia's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <a href="#home">
+          <img src="images/logo.png" alt="Julia's Portfolio Logo"/>
+          <h4>JULIA'S PORTFOLIO</h4>
+        </a>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">☰</div>
+
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#message">Message Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="header-opacity"></div>
+    <div class="header-jumbotron">
+
+      <!-- Form Input -->
+      <div class="input-box" id="inputBox">
+        <h1>HELLO EVERYONE!!!</h1>
+        <p>Sebelum melihat karya-karya saya, yuk kenalan dulu! Silakan isi nama kamu di sini yaaa 😊</p>
+        <input type="text" id="nameInput" placeholder="Please type your name here..." />
+        <button onclick="showWelcome()">SUBMIT</button>
+      </div>
+
+      <!-- Welcome Box -->
+      <div class="welcome-box fade-in" id="welcomeBox" style="display: none;">
+        <h1 id="greeting"></h1>
+        <p>Di sinilah tempat saya berbagi karya, memperluas pengetahuan, dan tumbuh perlahan sebagai web developer 🌱</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="abtme" id="about">
+    <h1 class="abtme_title">ABOUT ME</h1>
+    <div class="container abtme_container">
+      <div class="abtme_left">
+        <div class="abtme_left-image">
+          <img src="images/3.png" alt="Julia's Photo" />
+        </div>
+      </div>
+      <div class="abtme_right">
+        <h3>Hai! Saya Julia Ristyaningrum.</h3>
+        <p>
+          Seorang mahasiswi yang lagi jatuh cinta sama dunia pengembangan web, terutama bagian tampilan dan fungsinya! Bagi saya, bikin website itu rasanya kayak nyusun puzzle digital yang nggak cuma harus berjalan dengan baik, tapi juga enak dipandang dan nyaman digunakan.
+          <br> Walaupun masih dalam proses belajar, saya sangat bersemangat untuk terus ngulik hal-hal baru, ngerjain proyek kecil-kecilan, dan pelan-pelan mengasah kemampuan coding saya. Setiap baris kode yang saya tulis sekarang adalah langkah kecil menuju mimpi besar di masa depan.
+          <br> Di sela-sela belajar, saya suka mencari inspirasi desain dari mana aja, bisa dari Pinterest, YouTube, atau sekadar menikmati waktu santai ditemani secangkir kopi dan lagu favorit 🎶☕ Karena menurut saya, belajar akan terasa jauh lebih seru kalau dijalani dengan pikiran terbuka, rasa penasaran yang tinggi, dan niat penuh antusiasme 💖
+          <br> Saya sangat percaya, bahwa proses nggak akan pernah mengkhianati hasil. Selama kita mau terus belajar dan berkembang, kesempatan emas pasti datang di waktu yang tepat 💪💫
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <h1 class="portfolio-title">MY PORTFOLIO</h1>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="images/portfolio1.png" alt="Company Website - Vector Craft" />
+        </div>
+        <div class="portfolio-description">
+          <h2>Company Website - Vector Craft</h2>
+          <p>
+            Website ini saya buat dengan gaya modern dan minimalis untuk menampilkan layanan ilustrasi vector secara profesional dan menarik.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="images/portfolio2.png" alt="Aplikasi Pembayaran Listrik - Electropay" />
+        </div>
+        <div class="portfolio-description">
+          <h2>Aplikasi Pembayaran Listrik - Electropay</h2>
+          <p>
+            Saya membuat sistem manajemen pembayaran listrik yang memungkinkan petugas untuk memantau data pelanggan, penggunaan daya, status tagihan, dan pendapatan secara real-time.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="images/portfolio3.png" alt="Aplikasi Pengelolaan Kasir - Serenitas Café" />
+        </div>
+        <div class="portfolio-description">
+          <h2>Aplikasi Pengelolaan Kasir - Serenitas Café</h2>
+          <p>
+           Saya membuat aplikasi ini untuk mempermudah pencatatan, penjualan, dan pengelolaan operasional di kafe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Me Section -->
+  <section id="message" class="message-section">
+    <h1 class="message-title">MESSAGE ME</h1>
+    <div class="message-container">
+      <!-- gambar Kiri -->
+       <div class="form-left">
+        <img src="images/message.jpg" alt="Message Image" />
+       </div>
+      <!-- form kanan -->
+      <div class="form-right"> 
+        <form id="messageForm">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" placeholder="Ketikkan Pesan Anda" required></textarea>
+
+          <button type="submit">KIRIM</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Pesan Kamu Sudah Terkirim!</h2>
+      <p id="popupContent"></p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="footer-container">
+      <!-- footer Kiri -->
+       <div class="footer-left">
+        <div class="logo">
+          <a href="#home">
+            <img src="images/logo.png" alt="Website Logo" />
+            <h4>JULIA'S PORTFOLIO</h4>
+          </a>
+        </div>
+       </div>
+
+      <!-- footer tengah -->
+      <div class="footer-middle">
+        <h4>PERMALINKS</h4>
+        <ul class="permalinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#message">Message Me</a></li>
+        </ul>
+      </div>
+
+      <!-- footer kanan -->
+      <div class="footer-right">
+        <h4>CONTACT</h4>
+        <div>
+          <p>juliaristya123@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <small>&copy; 2025 Julia's Portfolio. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
