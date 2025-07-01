@@ -7,7 +7,7 @@ Halo!! Selamat datang di portfolio digital saya!
 Proyek ini dibuat sebagai bentuk representasi diri saya dalam bidang teknologi dan desain.  
 Melalui website ini, saya memperkenalkan latar belakang, keterampilan, serta proyek-proyek yang pernah saya kerjakan selama menempuh studi di dunia Teknologi Informasi.
 
-> “Desain bukan hanya tentang tampilan, tetapi juga tentang bagaimana sesuatu bekerja.”
+> “Sebuah website yang baik bukan sekadar enak dipandang, tapi juga nyaman digunakan dan mudah dipahami.”
 
 ---
 
